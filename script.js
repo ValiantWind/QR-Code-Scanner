@@ -2,7 +2,7 @@ let scanner = new Instascan.Scanner({ video: document.getElementById('preview') 
   scanner.addListener('scan', function (content) {
       alert(content);
 });
-function startScanner() {
+//function startScanner() {
 Instascan.Camera.getCameras().then(function (cameras) {
     if (cameras.length > 0) {
         scanner.start(cameras[0]);
@@ -12,7 +12,7 @@ Instascan.Camera.getCameras().then(function (cameras) {
 }).catch(function (e) {
   console.error(e);
 });
-}
-function stopScanner() {
-            scanner.stop();
-}
+//}
+// function stopScanner() {
+//             scanner.stop();
+// }
